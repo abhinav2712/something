@@ -1,0 +1,177 @@
+.bg-dark{
+  background-color: #04204e !important;
+}
+
+body, html{
+  height:100%;
+  margin:0;
+  font-size:16px;
+  font-family:"Lato", sans-serif;
+  font-weight:400;
+  line-height:1.8em;
+  color:#666;
+}
+
+
+.pimg1, .pimg2, .pimg3{
+  position:relative;
+  opacity:0.90;
+  background-position:center;
+  background-size:cover;
+  background-repeat:no-repeat;
+
+  /*
+    fixed = parallax
+    scroll = normal
+  */
+  background-attachment:fixed;
+}
+
+.pimg1{
+  background-image:url('../images/image1.jpg');
+  min-height:100%;
+}
+
+.pimg2{
+  background-image:url('../images/image2.jpg');
+  min-height:400px;
+}
+
+.pimg3{
+  background-image:url('../images/image3.jpg');
+  min-height:400px;
+}
+
+.section{
+  text-align:center;
+  padding:50px 80px;
+}
+
+.section-light{
+  background-color:#f4f4f4;
+  color:#666;
+}
+
+.section-dark{
+  background-color:#282e34;
+  color:#ddd;
+}
+.ptext{
+  position:absolute;
+  top:50%;
+  width:100%;
+  text-align:center;
+  color:#0000;
+  font-size:27px;
+  letter-spacing:8px;
+  text-transform:uppercase;
+}
+
+
+.ptext .border{
+  background-color:#111;
+  color:#fff;
+  padding:20px;
+}
+
+.ptext .border.trans{
+  background-color:transparent;
+}
+
+@media(max-width:568px){
+  .pimg1, .pimg2, .pimg3{
+    background-attachment:scroll;
+  }
+}
+.footer-container{
+  background-color:#212329;
+  padding: 4rem 0 4rem 0 ;
+}
+
+.footer{
+  width:80%;
+  height: 40vh;
+  background-color: #212329
+  color: #fff;
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  margin: 0 auto;
+}
+.footer-heading {
+  display: flex;
+  flex-direction: column;
+  margin-right: 4rem;
+}
+.footer-heading h2 {
+  margin-bottom: 2rem;
+}
+.footer-heading a {
+  color:#fff;
+  text-direction: none;
+  margin-bottom: 0.5rem;
+}
+.footer-heading a:hover{
+  color: red;
+  transition: 0.3s ease-out;
+}
+.footer-email-form h2 {
+  margin-bottom: 2rem;
+}
+ #footer-email{
+   width:250px;
+   height:40px;
+   border-radius: 4px;
+   outline: none;
+   border:none;
+   paddinf-left: 0.5rem;
+   font-size: 1rem;
+   margin-bottom: 1rem;
+
+ }
+
+ #footer-email::placeholder {
+   color: #b1b1b1;
+ }
+ #footer-email-btn{
+   width:100px;
+   height:40px;
+   border-radius: 4px;
+   background-color: #F9423D;
+   outline: none;
+   border:none;
+   color: #fff;
+   font-size: 1rem;
+ }
+ #footer-email-btn:hover {
+   cursor: pointer;
+   background-color: #337AF1;
+   transition: all 0.4s ease-out;
+ }
+ @media screen and (max-width:1150px) {
+   .footer{
+     height: 50vh;
+   }
+   .footer-email-form{
+     margin-top: 4rem;
+   }
+ }
+ @media screen and (max-width:820px) {
+   .footer{
+     padding-top:2rem;
+   }
+
+ }
+ @media screen and (max-width:720px) {
+   .footer-3{
+display: none;
+   }
+   .footer-email-form{
+     margin-top: 2rem;
+   }
+ }
+.footer-bottom-text{
+  text-align:center;
+  background: #000;
+  line-height: 75px;
+}
